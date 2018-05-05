@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='CSS/style.css')}}">
+	<script type="text/javascript" src="{{ url_for('static', filename='js/script.js')}}"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="mainForm">
+			<form action='/result' method="post">
+				
+				<p>Your Name:</p> 
+				<input type="text" name="name">
+				 
+				 <p>Dojo Location:</p>
+				 	<select name="city">
+					<option value="SJ">SJ</option>
+					</select>
+				<p>Favorite Language:</p>
+				<select name="lang">
+					<option value="Python">python</option>
+				</select>	
+				
+				<p class="last">Comment(optional)<p>: <input type="text" name="textBox">
+					<input type="submit" value="Submit">
+			</form>
+		</div>
+		
+	</div>
+
+</body>
+</html>
